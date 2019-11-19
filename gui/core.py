@@ -404,7 +404,7 @@ class ColumnLayout(ElementWidget):
                     y=self.bounds.size.y + child.bounds.size.y
                 )
             if is_y_up:
-                for child in self.chldren:
+                for child in self.children:
                     child.bounds.pos += Point(0, self.bounds.size.y)
             
         def draw(self, renderer, pos):
